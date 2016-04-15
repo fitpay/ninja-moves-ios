@@ -9,8 +9,10 @@
 import UIKit
 
 class ViewController: UIViewController {
+    @IBOutlet weak var webview: UIWebView!
+    
     @IBAction func Clicky(sender: AnyObject) {
-        print("Clicky Click!")
+        print("Going to webview view");
     }
 
     override func viewDidLoad() {
@@ -23,7 +25,6 @@ class ViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-
 
 }
 

@@ -17,16 +17,17 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2A4-fC-o2Q">
-                                <rect key="frame" x="279" y="403" width="42" height="30"/>
-                                <state key="normal" title="Clicky"/>
-                                <connections>
-                                    <action selector="Clicky:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ks2-LE-WOP"/>
-                                </connections>
-                            </button>
                             <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" ambiguous="YES" misplaced="YES" image="ninja" translatesAutoresizingMaskIntoConstraints="NO" id="Dug-Xc-VAA">
                                 <rect key="frame" x="174" y="104" width="252" height="200"/>
                             </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2A4-fC-o2Q">
+                                <rect key="frame" x="248" y="403" width="105" height="30"/>
+                                <state key="normal" title="Open WebView"/>
+                                <connections>
+                                    <action selector="Clicky:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ks2-LE-WOP"/>
+                                    <segue destination="7EH-VP-pTP" kind="show" id="Eln-Xc-Ala"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
@@ -35,10 +36,48 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="o2k-Hi-WpI"/>
+                    <connections>
+                        <outlet property="webview" destination="i2g-ZG-q83" id="i06-lD-Csx"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="874" y="-178"/>
+            <point key="canvasLocation" x="485" y="-165"/>
+        </scene>
+        <!--Web View Controller-->
+        <scene sceneID="SpC-4F-Kc9">
+            <objects>
+                <viewController id="7EH-VP-pTP" customClass="WebViewController" customModule="ninjamoves" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="5Kz-iX-P2h"/>
+                        <viewControllerLayoutGuide type="bottom" id="2YS-iZ-cmT"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8Ga-4m-AcS">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="i2g-ZG-q83">
+                                <rect key="frame" x="0.0" y="20" width="600" height="580"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="deviceRGB"/>
+                            </webView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="i2g-ZG-q83" firstAttribute="centerX" secondItem="8Ga-4m-AcS" secondAttribute="centerX" id="4mi-0E-HfU"/>
+                            <constraint firstItem="i2g-ZG-q83" firstAttribute="leading" secondItem="8Ga-4m-AcS" secondAttribute="leading" id="IAJ-G8-cep"/>
+                            <constraint firstItem="i2g-ZG-q83" firstAttribute="centerX" secondItem="8Ga-4m-AcS" secondAttribute="centerX" id="Sky-fq-lu9"/>
+                            <constraint firstAttribute="bottom" secondItem="i2g-ZG-q83" secondAttribute="bottom" id="dUK-Th-7kT"/>
+                            <constraint firstAttribute="trailing" secondItem="i2g-ZG-q83" secondAttribute="trailing" id="eES-eb-m26"/>
+                            <constraint firstItem="i2g-ZG-q83" firstAttribute="top" secondItem="5Kz-iX-P2h" secondAttribute="bottom" id="sBx-z5-SQS"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="webview" destination="i2g-ZG-q83" id="WAB-bQ-1Om"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="zC3-gC-XsS" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1180" y="-165"/>
         </scene>
     </scenes>
     <resources>
