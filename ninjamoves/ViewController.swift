@@ -12,14 +12,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var webview: UIWebView!
     
     @IBAction func Clicky(sender: AnyObject) {
-        print("Opening web view")
-        
-        let url = NSURL (string: "http://demo-qa.pagare.me");
-        let requestObject = NSURLRequest(URL: url!);
-        webview.loadRequest(requestObject);
-        
-        self.webview.frame = self.view.bounds
-        webview.hidden = false;
+        print("Going to webview view");
     }
 
     override func viewDidLoad() {
@@ -32,7 +25,6 @@ class ViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-
 
 }
 
