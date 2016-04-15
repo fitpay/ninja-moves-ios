@@ -3,6 +3,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
@@ -17,6 +18,9 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" ambiguous="YES" misplaced="YES" image="ninja" translatesAutoresizingMaskIntoConstraints="NO" id="Dug-Xc-VAA">
+                                <rect key="frame" x="174" y="104" width="252" height="200"/>
+                            </imageView>
                             <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2A4-fC-o2Q">
                                 <rect key="frame" x="279" y="403" width="42" height="30"/>
                                 <state key="normal" title="Clicky"/>
@@ -24,17 +28,24 @@
                                     <action selector="Clicky:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ks2-LE-WOP"/>
                                 </connections>
                             </button>
-                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" ambiguous="YES" misplaced="YES" image="ninja" translatesAutoresizingMaskIntoConstraints="NO" id="Dug-Xc-VAA">
-                                <rect key="frame" x="174" y="104" width="252" height="200"/>
-                            </imageView>
+                            <webView hidden="YES" contentMode="scaleAspectFill" ambiguous="YES" misplaced="YES" scalesPageToFit="YES" translatesAutoresizingMaskIntoConstraints="NO" id="i2g-ZG-q83">
+                                <rect key="frame" x="0.0" y="20" width="600" height="580"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="deviceRGB"/>
+                            </webView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="i2g-ZG-q83" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="0gk-Zj-bir"/>
                             <constraint firstItem="Dug-Xc-VAA" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Dm2-G3-ANJ"/>
                             <constraint firstItem="2A4-fC-o2Q" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Nua-ff-PZp"/>
+                            <constraint firstItem="i2g-ZG-q83" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="Oa9-I8-PvO"/>
+                            <constraint firstItem="i2g-ZG-q83" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="iGH-lf-ibW"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="o2k-Hi-WpI"/>
+                    <connections>
+                        <outlet property="webview" destination="i2g-ZG-q83" id="i06-lD-Csx"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
