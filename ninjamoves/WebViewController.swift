@@ -7,18 +7,35 @@
 
 import Foundation
 import UIKit
+import WebKit
 
 class WebViewController: UIViewController {
-    @IBOutlet weak var webview: UIWebView!
-
+  
+    @IBOutlet var containerView : UIView! = nil
+    var webView: WKWebView?
+    
+    override func loadView() {
+        super.loadView()
+        
+        self.webView = WKWebView()
+        self.view = self.webView!
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        print("Loading web view controller")
+
+        // base64url encoded payment device data
+        // let config = "?config=eyJwYXltZW50RGV2aWNlIjogeyAiZGV2aWNlVHlwZSI6ICJXQVRDSCIsICJtYW51ZmFjdHVyZXJOYW1lIjogIkZvbyIsICJkZXZpY2VOYW1lIjogIkJhciIsICJmaXJtd2FyZVJldmlzaW9uIjogWyAiMSIsICIwIiwgIjAiIF0sICJvc05hbWUiOiAiQW5kcm9pZCJ9LCAiY2hhbm5lbE5hbWUiOiAiMTIzNDUifQ"
+
+        let url = "http://demo-qa.pagare.me"
         
-        self.webview.frame = self.view.bounds
-        let url = NSURL (string: "http://demo-qa.pagare.me?disableCreateUserRestriction=true");
-        let requestObject = NSURLRequest(URL: url!);
-        webview.loadRequest(requestObject);
+        let requestUrl = NSURL(string: url)
+        let request = NSURLRequest(URL:requestUrl!)
+        self.webView!.loadRequest(request)
+    }
+    
+    override func didReceiveMemoryWarning() {
+        super.didReceiveMemoryWarning()
     }
     
 }
