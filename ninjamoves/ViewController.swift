@@ -8,8 +8,7 @@
 import UIKit
 
 class ViewController: UIViewController {
-    @IBOutlet weak var webview: UIWebView!
-    
+   
     @IBAction func Clicky(sender: AnyObject) {
         print("Going to webview view");
     }

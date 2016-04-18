@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0A5A316F1CC5709D0083215F /* webpage.html in Resources */ = {isa = PBXBuildFile; fileRef = 0A5A316E1CC5709D0083215F /* webpage.html */; };
 		0A8EFD6A1CC13E0200EDEAAC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A8EFD691CC13E0200EDEAAC /* AppDelegate.swift */; };
 		0A8EFD6C1CC13E0200EDEAAC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A8EFD6B1CC13E0200EDEAAC /* ViewController.swift */; };
 		0A8EFD6F1CC13E0200EDEAAC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0A8EFD6D1CC13E0200EDEAAC /* Main.storyboard */; };
@@ -35,6 +36,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0A5A316E1CC5709D0083215F /* webpage.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = webpage.html; sourceTree = "<group>"; };
 		0A8EFD661CC13E0200EDEAAC /* ninjamoves.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ninjamoves.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0A8EFD691CC13E0200EDEAAC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0A8EFD6B1CC13E0200EDEAAC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -106,6 +108,7 @@
 				0A8EFD721CC13E0200EDEAAC /* LaunchScreen.storyboard */,
 				0A8EFD751CC13E0200EDEAAC /* Info.plist */,
 				0A8EFD971CC15E3100EDEAAC /* WebViewController.swift */,
+				0A5A316E1CC5709D0083215F /* webpage.html */,
 			);
 			path = ninjamoves;
 			sourceTree = "<group>";
@@ -237,6 +240,7 @@
 			files = (
 				0A8EFD741CC13E0200EDEAAC /* LaunchScreen.storyboard in Resources */,
 				0A8EFD711CC13E0200EDEAAC /* Assets.xcassets in Resources */,
+				0A5A316F1CC5709D0083215F /* webpage.html in Resources */,
 				0A8EFD6F1CC13E0200EDEAAC /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -489,6 +493,7 @@
 				0A8EFD901CC13E0200EDEAAC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		0A8EFD911CC13E0200EDEAAC /* Build configuration list for PBXNativeTarget "ninjamovesTests" */ = {
 			isa = XCConfigurationList;
@@ -497,6 +502,7 @@
 				0A8EFD931CC13E0200EDEAAC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		0A8EFD941CC13E0200EDEAAC /* Build configuration list for PBXNativeTarget "ninjamovesUITests" */ = {
 			isa = XCConfigurationList;
@@ -505,6 +511,7 @@
 				0A8EFD961CC13E0200EDEAAC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
