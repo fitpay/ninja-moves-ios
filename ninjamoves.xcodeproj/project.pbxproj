@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0A5A316F1CC5709D0083215F /* webpage.html in Resources */ = {isa = PBXBuildFile; fileRef = 0A5A316E1CC5709D0083215F /* webpage.html */; };
 		0A8EFD6A1CC13E0200EDEAAC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A8EFD691CC13E0200EDEAAC /* AppDelegate.swift */; };
 		0A8EFD6C1CC13E0200EDEAAC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A8EFD6B1CC13E0200EDEAAC /* ViewController.swift */; };
 		0A8EFD6F1CC13E0200EDEAAC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0A8EFD6D1CC13E0200EDEAAC /* Main.storyboard */; };
@@ -14,6 +15,7 @@
 		0A8EFD741CC13E0200EDEAAC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0A8EFD721CC13E0200EDEAAC /* LaunchScreen.storyboard */; };
 		0A8EFD7F1CC13E0200EDEAAC /* ninjamovesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A8EFD7E1CC13E0200EDEAAC /* ninjamovesTests.swift */; };
 		0A8EFD8A1CC13E0200EDEAAC /* ninjamovesUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A8EFD891CC13E0200EDEAAC /* ninjamovesUITests.swift */; };
+		0A8EFD981CC15E3100EDEAAC /* WebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A8EFD971CC15E3100EDEAAC /* WebViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +36,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0A5A316E1CC5709D0083215F /* webpage.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = webpage.html; sourceTree = "<group>"; };
 		0A8EFD661CC13E0200EDEAAC /* ninjamoves.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ninjamoves.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0A8EFD691CC13E0200EDEAAC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0A8EFD6B1CC13E0200EDEAAC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -47,6 +50,7 @@
 		0A8EFD851CC13E0200EDEAAC /* ninjamovesUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ninjamovesUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0A8EFD891CC13E0200EDEAAC /* ninjamovesUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ninjamovesUITests.swift; sourceTree = "<group>"; };
 		0A8EFD8B1CC13E0200EDEAAC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0A8EFD971CC15E3100EDEAAC /* WebViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +107,8 @@
 				0A8EFD701CC13E0200EDEAAC /* Assets.xcassets */,
 				0A8EFD721CC13E0200EDEAAC /* LaunchScreen.storyboard */,
 				0A8EFD751CC13E0200EDEAAC /* Info.plist */,
+				0A8EFD971CC15E3100EDEAAC /* WebViewController.swift */,
+				0A5A316E1CC5709D0083215F /* webpage.html */,
 			);
 			path = ninjamoves;
 			sourceTree = "<group>";
@@ -234,6 +240,7 @@
 			files = (
 				0A8EFD741CC13E0200EDEAAC /* LaunchScreen.storyboard in Resources */,
 				0A8EFD711CC13E0200EDEAAC /* Assets.xcassets in Resources */,
+				0A5A316F1CC5709D0083215F /* webpage.html in Resources */,
 				0A8EFD6F1CC13E0200EDEAAC /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -260,6 +267,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0A8EFD6C1CC13E0200EDEAAC /* ViewController.swift in Sources */,
+				0A8EFD981CC15E3100EDEAAC /* WebViewController.swift in Sources */,
 				0A8EFD6A1CC13E0200EDEAAC /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -485,6 +493,7 @@
 				0A8EFD901CC13E0200EDEAAC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		0A8EFD911CC13E0200EDEAAC /* Build configuration list for PBXNativeTarget "ninjamovesTests" */ = {
 			isa = XCConfigurationList;
@@ -493,6 +502,7 @@
 				0A8EFD931CC13E0200EDEAAC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		0A8EFD941CC13E0200EDEAAC /* Build configuration list for PBXNativeTarget "ninjamovesUITests" */ = {
 			isa = XCConfigurationList;
@@ -501,6 +511,7 @@
 				0A8EFD961CC13E0200EDEAAC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
